@@ -1,0 +1,36 @@
+<% layout("layout/boilerplate") %>
+<br>
+<div>
+<div class="card col-8 offset-3" style="width: 38rem; height:32rem;">
+    <div class="row mt-3">
+        <h2 class="offset-3 col-6" style="font-weight: 700;">SignUp</h2>
+        <div class="offset-3 col-6">
+            <form action="/signup" method="POST" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                  <input name="username" id="username" type="text" class="form-control" placeholder="example123" required/>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Enter your username</div>
+                  </div>
+        </div>
+    
+        <div class="offset-3 col-6">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                  <input name="email" id="email" type="email" class="form-control" placeholder="example@gmail.com" required>
+                  </div>
+        </div>
+    
+        <div class="offset-3 col-6">
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                  <input name="password" id="password" type="password" class="form-control" placeholder="Enter your password" required/>
+                  </div>
+                  <button class="btn btn-success">Sign up</button>
+            </form>
+        </div>
+    
+    </div>
+</div>
+<br>
+</div>
